@@ -1,8 +1,12 @@
 package hu.flowacademy;
 
+import hu.flowacademy.lecture5.singleton.Singleton;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Singleton mySingleton = Singleton.getInstance();
+
+
     }
 }
