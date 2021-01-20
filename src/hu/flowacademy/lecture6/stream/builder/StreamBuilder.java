@@ -1,8 +1,8 @@
-package hu.flowacademy.lecture6.stream;
+package hu.flowacademy.lecture6.stream.builder;
 
 import java.util.stream.Stream;
 
-public class Main {
+public class StreamBuilder {
     public static void main(String[] args) {
         Stream<Integer> s = Stream.
                 <Integer>builder()
