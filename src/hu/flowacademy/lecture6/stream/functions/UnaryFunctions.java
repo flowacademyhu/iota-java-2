@@ -11,7 +11,7 @@ public class UnaryFunctions {
         // Ezek a függvények egy paramétert fogadnak
 
         // Pl. ez a függvény Stringből képez Integert (megszámolja a magánhangzókat)
-        Function<String, Integer> countVowels = (str) -> {
+        Function<String, Integer> countVowels = (String str) -> {
             int numberOfVowels = 0;
             Set<Character> vowels = Set.of('a', 'e', 'i', 'o', 'u');
             for (char c : str.toCharArray()) {

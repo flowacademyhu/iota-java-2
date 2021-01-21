@@ -9,6 +9,7 @@ public class BinaryFunctions {
     public static void main(String[] args) {
         // Ha két paramétert fogadunk, akkor az BiFunction lesz
         // Btw, Java 11 óta lehet használni String.repeat-et is
+        // String s1 = "ez egy string".repeat(9999);
         BiFunction<String, Integer, String> repeat = (s, n) -> {
             StringBuilder repeated = new StringBuilder();
             for (int i = 0; i < n; i++) {
@@ -42,10 +43,20 @@ public class BinaryFunctions {
         };
         System.out.println(lnko.apply(12896, 169));
 
-        // BiPredicate - többszöröse-e egyámásnak a két szám
+        // BiPredicate - többszöröse-e egymásnak a két szám
         BiPredicate<Integer, Integer> isMultiplicative = (a,b) -> a > b ? a % b == 0 : b % a == 0;
         System.out.println(isMultiplicative.test(12, 48));
         System.out.println(isMultiplicative.test(96, 13));
+
+        // BiPredicate: mondjuk meg, hogy az első szám, nagyobb-e, mint a második
+        BiPredicate<Integer, Integer> isFirstBigger = (a, b) -> a > b;
+
+        // BiPredicate: mondjuk meg, a stringnek része-e az int paraméter
+        // pl: str = "1984", n = 4
+        BiPredicate<String, Integer> contains = (str, n) -> str.contains(Integer.toString(n));
+        System.out.println(contains.test("1984", 4));
+
+
     }
 
 }

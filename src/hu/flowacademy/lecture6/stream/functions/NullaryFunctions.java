@@ -2,10 +2,7 @@ package hu.flowacademy.lecture6.stream.functions;
 
 import hu.flowacademy.lecture6.stream.models.Foo;
 
-import java.util.function.DoubleSupplier;
-import java.util.function.IntSupplier;
-import java.util.function.LongSupplier;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class NullaryFunctions {
     public static void main(String[] args) {
@@ -21,7 +18,12 @@ public class NullaryFunctions {
         LongSupplier longSupplier = () -> 314159265359L;
         DoubleSupplier e = () -> 2.7182818;
 
-        // Consumer
+        // Consumer: aminek van bemenő paramétere, DE nem ad vissza semmit (paraméteres void)
+        Consumer<Integer> print = i -> {
+            System.out.println(i);
+        };
+        // ez itt ugyanaz, mint az előző
+        Consumer<Integer> printMethodReference = System.out::println;
     }
 }
 
