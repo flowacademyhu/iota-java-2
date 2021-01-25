@@ -24,6 +24,6 @@ public final class Borton {
     }
 
     public static int foglyokSzama() {
-        return 11;
+        return 12;
     }
 }
