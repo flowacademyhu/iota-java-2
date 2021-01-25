@@ -58,4 +58,9 @@ public class MintaElek extends Bortontoltelek {
 }
 ```
 
+A megvalósított osztályt töltsétek fel ugyanebbe a GitHub repóba.
+
 Jó munkát! 💪
+
+## Credit
+A feladatleírás a Szegedi Tudományegyetem Szoftvefejlesztés Tanszékétől származik, így azt a feladat szövegezésével kapcsolatos összes jog megilleti.
