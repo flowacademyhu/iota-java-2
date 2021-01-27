@@ -5,7 +5,7 @@ import hu.flowacademy.lecture8.prisonBreak.Bortontoltelek;
 
 public class TTrab extends Bortontoltelek {
 
-    private static int index = 0;
+    private static int index = 1;
 
     @Override
     public String neve() {
