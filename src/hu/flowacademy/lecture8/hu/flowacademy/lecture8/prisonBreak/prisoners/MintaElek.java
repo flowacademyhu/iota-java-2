@@ -12,6 +12,7 @@ public class MintaElek extends Bortontoltelek {
 
     @Override
     public boolean voltKintMindenki() {
-        return new Random().nextBoolean();
+
+
     }
 }
