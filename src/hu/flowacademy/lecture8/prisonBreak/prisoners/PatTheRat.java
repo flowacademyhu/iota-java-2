@@ -1,9 +1,9 @@
-package hu.flowacademy.lecture8.prisonBreak;
+package hu.flowacademy.lecture8.prisonBreak.prisoners;
 
 import hu.flowacademy.lecture8.prisonBreak.Borton;
 import hu.flowacademy.lecture8.prisonBreak.Bortontoltelek;
 
-public class PatTheRat extends Bortontoltelek{
+public class PatTheRat extends Bortontoltelek {
 
     boolean kapcsoltamEMarFel = false;
 
