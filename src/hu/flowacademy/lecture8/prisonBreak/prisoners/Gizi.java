@@ -1,4 +1,4 @@
-package prisonBreak.prisoners;
+package hu.flowacademy.lecture8.prisonBreak.prisoners;
 
 import hu.flowacademy.lecture8.prisonBreak.Borton;
 import hu.flowacademy.lecture8.prisonBreak.Bortontoltelek;
