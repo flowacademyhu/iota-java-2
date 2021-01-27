@@ -16,6 +16,7 @@ public class Gizi extends Bortontoltelek {
     public boolean voltKintMindenki() {
         if (!Borton.lampaVilagit() && kapcsolasokSzama < 1) {
             Borton.lampaFelkapcsol();
+            kapcsolasokSzama++;
         }
         return false;
     }
